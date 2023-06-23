@@ -1,0 +1,23 @@
+#created a find_average function
+def find_average():
+#asking the user to tell us total number of data you have
+  a=int(input("enter the total number of data or values you have, then press enter: "))
+#created a list to store the data.
+  b=[]
+  i=0
+#using a loop to save the data.
+  while i<a:
+    b.append(int(input("enter a number and press enter: ")))
+    i+=1
+#created a new storage to store the sum of b
+  c=0
+  i=0
+  while i<a:
+    c=c+b[i]
+    i+=1
+#calculated the average of the data below  
+  d=c/a
+#return the output to the main
+  return d
+#main
+print(find_average())
